@@ -1,0 +1,483 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/*************************
+/* BASE FONT STYLE
+/*************************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Cinzel', Arial, Helvetica, sans-serif;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-image: url('..//rest-pics/image1.jpeg'); 
+  translate: -20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*************************
+/* Fonts
+/*************************/
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 7rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 2rem;
+  color: rgb(152, 80, 93)
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+.first form input {
+  width: 30%;
+  height: 50px;
+  border: none;
+  line-height: 2em;
+  padding-left: 2%;
+  color: rgb(102, 102, 102);
+  margin-left: 5%;
+  }
+button{
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: rgb(208, 168, 89);
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, .first, .second, .third, .fourth, .fifth {
+  width: 80%;
+  margin-left: 20%;
+  opacity: 97%;
+  color: #ffffff;
+}
+.first, .second, .third {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+/******************************************
+/* Header/First
+/*******************************************/
+body header.first {
+  margin-top: 10%;
+  height: 800px;
+  position:relative
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+  padding-bottom: 10%;
+  padding-right: 20%;
+}
+nav ul li {
+  justify-content: space-around;
+  flex-basis: 15%;
+  flex-wrap: nowrap;
+}
+.first {
+  background-image: url('..//rest-pics/image3.jpeg'); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size:cover;
+}
+.first h1 {
+  padding: 0 50% 2% 5%;
+}
+
+
+/******************************************
+/* Second section
+/*******************************************/
+.second {
+  background-color: rgb(208, 168, 89);
+  backdrop-filter: blur(2px);
+  padding-top: 7%;
+}
+.second *{
+  margin: 0 18% 2% 20%;
+  text-align: left;
+}
+.second p {
+  margin-top: 0.5%;
+  line-height: 30px;
+}
+.second h4 {
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+.second button {
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 0;
+  color: #ffffff;
+  background-color: rgb(152, 80, 93);
+}
+
+/******************************************
+/* Third Section
+/*******************************************/
+img{
+  width: 200px;
+  height: 260px;
+  margin: 15px; 
+} 
+.menu-images .first-images{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+  margin-bottom: 0;
+} 
+.menu-images .second-images{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.menu-link a{
+  color:rgb(208, 168, 89);
+}
+html body .third {
+  background-color: rgb(21, 21, 22);
+  height: 1100px;
+  text-align: center;
+}
+.third h4 {
+  margin-top: 5%;
+}
+.third h2 {
+  padding: 30px 0;
+}
+.third ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.third ul li {
+  flex-basis: 8%;
+  text-align: center;
+}
+.third .icons1 i {
+  width: 0;
+}
+
+/******************************************
+/* Fourth section
+/*******************************************/
+.fourth {
+  text-align: center;
+  height: 1100px;
+  line-height: 60px;
+  padding-top: 4%;
+  background-color: rgb(208, 168, 89);
+}
+.fourth h2 {
+  color: rgb(152, 80, 93);
+}
+.fourth .contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.fourth .hours {
+  display: flex;
+  text-align: left;
+  justify-content: space-evenly;
+  margin: 0 10%;
+}
+.fourth .top4 {
+  padding-bottom: 40px;
+}
+.hours section h3 {
+  font-size: 2.5rem;
+  color: #000000;
+}
+.hours section h4 {
+  font-size:1.8rem;
+  color: #000000;
+} 
+.hours section h5 {
+  color: black;
+  font-size: 1.8rem;
+}
+.fourth span {
+  font-size: 2rem;
+  padding-top: 20px;
+}
+.fourth .contact-info .number span {
+  font-size: 4rem;
+  color: black;
+}
+.fourth img {
+  width: 800px;
+  height: 500px;
+}
+.fifth .icons1 i {
+  width: 0;
+}
+
+
+/******************************************
+/* Fifth Section
+/*******************************************/
+.fifth {
+  height: 900px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+  background-color: rgb(21, 21, 22);
+  
+}
+.fifth h4 {
+  padding-top: 10%;
+}
+
+.fifth img {
+  border-radius: 80%;
+  height: 200px;
+  align-self: center;
+}
+.fifth .name span {
+  font-size: 3.2rem;
+}
+.fifth .job-title span {
+  font-size: 2rem;
+  color: darkgray;
+}
+.fifth .name,
+.fifth .job-title {
+  line-height: 30px;
+}
+
+.fifth p {
+  padding: 0% 10%;
+}
+.stars i {
+  color: rgb(221, 176, 52);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.iconsFirst{
+  display: block;
+  padding-left: 55px;
+  padding-top: 10px;
+  justify-content: left;
+}
+.icons1{
+  display: block;
+  padding-top: 10px;
+  justify-content: center;
+
+}
+
+.icons1 i{
+  color: orange;
+  margin: 1% 0.9% 0 0.9%;
+  display: inline-block;
+}
+
+.icons1 span{
+  color: black;
+}
+
+button:hover{
+  background-color: rgb(57, 57, 57);
+  color: #ffffff;
+  transition: all 500ms ease;
+}
+a:visited {
+  color: rgb(165, 108, 118);
+}
+
+a:hover {
+  color: rgb(165, 108, 118);
+  transition: all 500ms ease;
+}
+
+
+/******************************************
+/* Responsive @ <800px
+/*******************************************/
+@media all and (max-width:800px){
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h4 {
+    font-size: 1.7rem;
+    color: orange;
+  }
+  span {
+    font-size: 1.7rem;
+  }
+  
+  p {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.2 rem;
+    line-height: 25px;
+  }
+  header, .first, .second, .third, .fourth, .fifth {
+    width: 100%;
+    margin-left: 0;
+  }
+  body {
+  background-image: none; 
+  background-color: rgb(208, 168, 89);
+  }
+  img{
+    width: 200px;
+    height: 230px;
+    margin: 15px; 
+  } 
+  body header.first {
+    margin-top: 0%;
+    height: 500px;
+  }
+  header nav ul {
+    font-size: 1.2rem;
+    justify-content: space-evenly;
+    padding: 2% 0 5% 2%;
+    width: 100%;
+  }
+  .first, .second, .third, .fourth, .fifth {
+    height:fit-content;
+  }
+  #main-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: left;
+    line-height: 50px;
+    padding: 0;
+  }
+  #main-display h1 {
+    padding: 10% 0 5% 7%;
+  }
+  .first button{
+    margin-left: 40px;
+    border-radius: 5px;
+  }
+  .first input{
+    display: none;
+  }
+  #second-display {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    height: 500px;
+  }
+  body .second h2 {
+    background-color: rgb(208, 168, 89);
+    font-size: 3rem;
+    margin: 0;
+    align-self: center;
+  }
+  body .second p {
+    margin: 0 10%;
+    font-size: 1.3rem;
+  }
+  .third .menu-link{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .menu-images{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .menu-images .first-images{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+  } 
+  .menu-images .second-images{
+    display: none;
+  }
+  .menu-images .first-images .last-image{
+    display: none;
+  }
+  .fourth img {
+    width: 400px;
+    height: 250px;
+  }
+  .fifth img {
+    display: none;
+  }
+  .icons1 i{
+    margin: 0;
+    padding: 0 10px 0 10px;
+  }
+}
